@@ -46,14 +46,17 @@ The design can be simulated using a compatible Verilog/SystemVerilog simulator, 
 
 The testbench applies input sequences and weight coefficients to verify the functional behavior of the MAC unit.
 
+```text
+xrun -64bit -sv -access +rwc mac_seq_a.sv tb_mac_seq_a.sv -l mac_seq_a.log
+```
+
 ## Simulation Results
-<img width="940" height="431" alt="image" src="https://github.com/user-attachments/assets/f4d6192d-372f-4e4a-a451-46134eb44bcf" />
 
 The design was simulated using Cadence Xcelium, and the resulting signal waveforms were inspected using the waveform viewer.
 
 ### Output Waveform
 
-![Sequential MAC Unit Simulation Waveform](results/simulation-results.png)
+<img width="940" height="431" alt="image" src="https://github.com/user-attachments/assets/f4d6192d-372f-4e4a-a451-46134eb44bcf" />
 
 The waveform shows the simulated signal activity during the sequential MAC operation.
 
